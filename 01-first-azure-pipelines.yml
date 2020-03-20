@@ -10,19 +10,19 @@ pool:
   vmImage: 'ubuntu-latest'
 
 # Stage > Jobs > Task (Steps)
+
 jobs:
 - job: Job1
-steps:
-- script: echo Hello, world changed 1st time!
-  displayName: 'Run a one-line script'
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+  steps:
+  - script: echo Hello Job1, world changed 1st time!
+    displayName: 'Run a one-line script'
+
+  - script: |
+      echo Add other tasks to build, test, and deploy your project.
+      echo See https://aka.ms/yaml
+    displayName: 'Run a multi-line script'
 
  
 - job: Job2
-steps:
-- script: echo Hello, world changed 2nd time!
-  displayName: 'Run a one-line script'
-    
+  steps:
+  - script: echo Hello Job2 , world changed 1st time!
