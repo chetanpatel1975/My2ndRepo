@@ -27,10 +27,10 @@ jobs:
   steps:
   - script: echo Hello Job2 , world changed 1st time!
 
-  - job: Job3
+- job: Job3
   steps:
   - script: echo Hello Job3 , world changed 1st time!
 
-  - job: Job4
+- job: Job4
   steps:
   - script: echo Hello Job4 , world changed 1st time!
