@@ -19,21 +19,21 @@ stages:
 
 - stage: Devdeploy
   jobs:
-    - job: FirstJob Devdeploy
+    - job: DevdeployJob
       steps:
         - bash: echo build FirstJob
 
   
 - stage: QAdeploy
   jobs:
-    - job: QAdeploy
+    - job: QAdeployJob
       steps:
         - bash: echo build QAdeploy
 
   
 - stage: Proddeploy
   jobs:
-    - job: Proddeploy
+    - job: ProddeployJob
       steps:
         - bash: echo build Proddeploy
    
